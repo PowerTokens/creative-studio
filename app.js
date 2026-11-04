@@ -8,8 +8,7 @@ const themes = {
 };
 let state={layout:'single',size:'landscape',color:'light',mode:'generate',photo:null,photoData:null,logo:null};
 // This public OAuth client ID and the redirect URI must be registered with PowerTokens.
-const PT_OAUTH_CLIENT_ID='';
-const PT_REDIRECT_URI=location.origin+'/';
+const PT_OAUTH_CLIENT_ID='';const PT_REDIRECT_URI=location.origin+'/creative-studio/';
 let connection='account',defaultKey='',accessToken='';
 function accountMessage(message){byId('accountstatus').textContent=message}
 function randomUrlSafe(bytes=32){let raw=crypto.getRandomValues(new Uint8Array(bytes));return Array.from(raw,b=>b.toString(16).padStart(2,'0')).join('')}
